@@ -1,0 +1,55 @@
+ <!DOCTYPE html>
+<html>
+<head>
+
+<title>Bear With Project</title>
+<link rel="shortcut icon" href="image/favicon.png" />
+<LINK REL="stylesheet" href="style.css" TYPE="text/css">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
+<SCRIPT language="javascript" src="javasier.js"></SCRIPT> 
+</head>
+<body onload="resize(),set(),levelDef()" onresize="resize(),set()">
+
+<TABLE class="table1">
+<TR>
+<TD align="left" style="font-weight:bold;"><SPAN>B</SPAN>EAR <SPAN>W</SPAN>ITH <SPAN>P</SPAN>ROJECT</TD>
+<TD align="right" ID="tdh"><INPUT type="button" value="HOME" onclick="location.reload();location.href='index.html'"ID="bt1"></TD>
+<TD align="right" ID="tds"><INPUT type="button" value="ANTENNA TREE" onclick="location.reload();location.href='tree.html'" ID="bt2"></TD>
+<TD align="right" ID="tds"><INPUT type="button" value="SIERPINSKI TRIANGLE"  style="width:250px; background-color:#6AACA5; color:white;" ID="bt2"></TD>
+</TR>
+</TABLE>
+
+<TABLE ID="table2">
+<TR>
+<TD>
+<CANVAS ID="canvas"  width="l" height="h"  orizontalAlignment="Center" VerticalAlignment="Center" RenderTransform="1 0 0 -1 0 0"> 
+Attention: your browser do not support tag CANVAS. </CANVAS>
+</TD>
+</TR>
+</TABLE>
+
+<div ID="div">
+Image Dimensions:<br> 
+Width: <INPUT type="number" min="100" step="1" maxlength="2" size="2" ID="dx">
+Height: <INPUT type="number" min="100" step="1" maxlength="2" size="2" ID="q">
+Level (max 7): <INPUT type="number" min="0"  max="7" step="1" maxlength="2" size="2" ID="liv">
+<INPUT type="button" value="Set & Clean" onClick="set()" ID="bottone">
+<div class="dropdown">
+<INPUT type="button" value="Design color" class="bottone2">
+
+<div class="dropdown-content">
+    <a onClick="color(1)" ID="blue">Blue</a>
+    <a onClick="color(4)">Cyan</a>
+    <a onClick="color(3)">Green</a>
+	<a onClick="color(6)">Magenta</a>
+    <a onClick="color(0)">Red</a>
+    <a onClick="color(2)">Yellow</a>
+	<a onClick="color(5)" ID="white">White</a>
+  </div>
+ </div>
+<INPUT type="button" value="Draw" onClick="disegno()" style="width:80px;margin-left:5px;margin-top:0px;" ID="bottone">
+</div>
+
+
+</body>
+</html> 
